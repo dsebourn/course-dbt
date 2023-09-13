@@ -14,6 +14,8 @@ How many users have only made one purchase? Two purchases? Three+ purchases?
 
 On average, how many unique sessions do we have per hour?
     A: 578
+    -- update: realized we wanted to know how many per hour, revised:
+    A2: 16.327586 sessions per hour
 
 query logic: https://app.snowflake.com/lrqosqe/xib77936/w1O9y6q7YPtd#query
 
