@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_postgres__events
+    description: base table from postgres representing all system events
+    columns:
+      - name: event_guid
+        test:
+          - unique
+          - not_null

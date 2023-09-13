@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_postgres__products
+    description: base table from postgres representing all distinct products, as well as prices and inventory quantity
+    columns:
+      - name: product_guid
+        test:
+          - unique
+          - not_null

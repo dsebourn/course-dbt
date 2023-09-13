@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_postgres__order_items
+    description: base table from postgres representing items and quantities for each order
+
+    # leaving the below in case specific tests are required later, but this model is intented to NOT
+      # have unique orders and unique products because you can have multiple records of the same
+      # order with multiple products.
+    # columns:
+    #   - name: 
+    #     test:
+    #       - unique
+    #       - not_null

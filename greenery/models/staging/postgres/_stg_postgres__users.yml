@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_postgres__users
+    description: base table from postgres representing users
+    columns:
+      - name: user_guid
+        test:
+          - unique
+          - not_null

@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_postgres__promos
+    description: base table from postgres representing promos, their discount, and status of the promo

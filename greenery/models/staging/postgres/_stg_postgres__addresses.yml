@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_postgres__addresses
+    description: base table from postgres representing all addresses and their geographical data
+    columns: 
+      - name: address_guid
+        test:
+          - unique
+          - not_null

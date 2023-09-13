@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_postgres__orders
+    description: base table from postgres representing orders placed
+    columns:
+      - name: order_guid
+        test:
+          - unique
+          - not_null
