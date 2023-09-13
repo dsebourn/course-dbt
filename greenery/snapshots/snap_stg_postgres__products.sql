@@ -1,11 +1,15 @@
+{% snapshot inventory_snap %}
+
 {{
   config(
-    target_database = dev_db,
-    target_schema = dbt_imdakota2575gmailcom,
+    target_database = target.database,
+    target_schema = target.schema,
     strategy='check',
     unique_key='product_id',
     check_cols=['inventory'],
    )
 }}
 
-select * from stg_postgres__products
+select * from {{ source('postgres', 'products') }}
+
+{% endsnapshot %}
