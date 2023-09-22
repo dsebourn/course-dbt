@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: int_postgres__users_details
+    description: Intermediate table from stg_postgres__users and stg_postgres__addresses where the data is joined with light transformations.
+    columns:
+      - name: users_full_name
+        description: The users first and last names combined

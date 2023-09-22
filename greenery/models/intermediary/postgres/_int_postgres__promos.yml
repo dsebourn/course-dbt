@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: int_postgres__promos
+    description: Intermediate table from stg_postgres__promos where the data is transformed into a more useable & standardized state
+    columns:
+      - name: promo_type
+        description: promo_id transformed with special characters replaced with an underscore
+      - name: discount_percent
+        description: discount multiplied by 0.01 to transform it into a useable discount percent when calculating price totals

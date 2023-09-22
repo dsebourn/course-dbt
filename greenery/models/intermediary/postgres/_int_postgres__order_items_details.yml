@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_postgres__order_items_details
+    description: Intermediate table from order_items and products joined together with light transformations for enchanced useability.

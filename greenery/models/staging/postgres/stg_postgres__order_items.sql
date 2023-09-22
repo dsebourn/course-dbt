@@ -11,4 +11,4 @@ renamed_recast as (
     from source
 )
 
-select * from source
+select * from renamed_recast

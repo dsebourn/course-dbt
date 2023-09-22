@@ -3,3 +3,12 @@ version: 2
 models:
   - name: stg_postgres__promos
     description: base table from postgres representing promos, their discount, and status of the promo
+    columns:
+      - name: promo_id
+        tests:
+          - unique
+          - not_null
+      - name: discount
+        tests:
+          - not_null
+          - is_zero

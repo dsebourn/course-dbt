@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_postgres__delivery_addresses
+    description: Intermediate table from stg_postgres__orders and stg_postgres__addresses where the data is joined with light transformations qualified over the first row of repeat orders to the same delivery addresses.

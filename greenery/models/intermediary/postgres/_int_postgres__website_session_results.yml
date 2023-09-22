@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_postgres__website_session_results
+    description: Intermediate table from int_postgres__website_session_results with data on how successful a session was at leading a user to completing an order, including products involved as an array.

@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_postgres__order_details
+    description: Intermediate table from many tables where the data is joined together to enhance the details available for every order.

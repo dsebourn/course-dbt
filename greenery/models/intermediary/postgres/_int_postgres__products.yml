@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_postgres__products
+    description: Intermediate table from stg_postgres__products where the data is transformed with lifetime statistics included.

@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: fct__orders_being_prepared
+    description: Fact table containing only orders currently being prepared, finalized for operations.

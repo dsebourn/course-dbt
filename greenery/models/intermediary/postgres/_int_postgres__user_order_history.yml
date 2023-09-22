@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_postgres__user_order_history
+    description: Intermediate table from many tables where data is joined together to aid in reporting the order history of users

@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: fct__order_details
+    description: Fact table from int_postgres__order_details where the data is finalized for core users.

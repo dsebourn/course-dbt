@@ -6,9 +6,9 @@ source as (
 renamed_recast as (
     select
         product_id as product_guid,
-        name,
-        price,
-        inventory
+        name as product_name,
+        price as product_price,
+        inventory as current_product_inventory
     from source
 )
 

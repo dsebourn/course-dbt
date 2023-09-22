@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: fct__products 
+    description: Fact table from int_postgres__products where the data is finalized for marketing users with the inclusion of lifetime counts of product performance.

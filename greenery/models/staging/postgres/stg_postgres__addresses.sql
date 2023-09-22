@@ -9,7 +9,8 @@ renamed_recast as (
         address,
         zipcode,
         state,
-        country
+        country,
+        concat(address, ', ', zipcode, ', ', state, ', ', country) as full_address
     from source
 )
 

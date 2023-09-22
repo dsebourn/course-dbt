@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: fct__products
+    description: Fact table from int_postgres__users_details where user data is finalized for core users.

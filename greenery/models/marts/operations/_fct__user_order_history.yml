@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: fct__user_order_history
+    description: Fact table containing order history of all users, finalized for operations users.

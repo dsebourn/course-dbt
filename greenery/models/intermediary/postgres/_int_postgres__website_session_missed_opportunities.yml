@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_postgres__website_session_missed_opportunities
+    description: Intermediate table from stg_postgres__events with data on which sessions had missed opportunities, and the details therein.
