@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: int_postgres__order_number_log
+    description: Light intermediate transform to generate a simple order number based on order creation dates, intended to be easy references by cross-functional users.
+    columns:
+      - name: order_guid
+        test:
+          - unique
+          - not_null

@@ -1,3 +1,7 @@
+{{ config(
+    post_hook="{{ grant_select_on_model_to_roles(['TRANSFORMER_DEV', 'RESEARCH_ROLE', 'OPERATIONS_ROLE']) }}"
+) }}
+
 with
 order_history as (
     select * from {{ref('int_postgres__user_order_history')}}

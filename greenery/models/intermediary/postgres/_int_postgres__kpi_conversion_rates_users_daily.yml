@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_postgres__kpi_conversion_rates_users_daily
+    description: Intermediate table from int_postgres__website_session_results where we calculate the daily conversion rate of website views to product purchases.

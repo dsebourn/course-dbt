@@ -1,5 +1,8 @@
-with
+{{ config(
+    post_hook="{{ grant_select_on_model_to_roles(['TRANSFORMER_DEV', 'RESEARCH_ROLE', 'MARKETING_ROLE', 'REPORTING']) }}"
+) }}
 
+with
 int_products as (
     select * from {{ref('int_postgres__products')}}
 ),

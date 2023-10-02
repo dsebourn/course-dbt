@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_postgres__website_session_orders
+    description: A transformation model that places all the sessions, orders, and order times at the session grain.

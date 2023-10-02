@@ -1,5 +1,5 @@
 version: 2
 
 models:
-  - name: fct__products 
+  - name: dim__product_trends_and_statistics 
     description: Fact table from int_postgres__products where the data is finalized for marketing users with the inclusion of lifetime counts of product performance.

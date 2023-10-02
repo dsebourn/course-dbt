@@ -37,7 +37,11 @@ models:
       +materialized: view
     staging:
       +materialized: view
+      +post_hook: 
+        - "{{grant_select_on_model_to_roles(['TRANSFORMER_DEV', 'RESEARCH_ROLE'])}}"
     intermediary:
       +materialized: view
+      +post_hook:
+        - "{{grant_select_on_model_to_roles(['TRANSFORMER_DEV', 'RESEARCH_ROLE'])}}"
     marts:
       +materialized: table

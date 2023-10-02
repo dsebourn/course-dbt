@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_postgres__website_session_views
+    description: A transformation model that places all the sessions, events, and view times at the event grain.

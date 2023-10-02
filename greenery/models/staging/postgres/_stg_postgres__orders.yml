@@ -5,6 +5,6 @@ models:
     description: base table from postgres representing orders placed
     columns:
       - name: order_guid
-        test:
+        tests:
           - unique
           - not_null

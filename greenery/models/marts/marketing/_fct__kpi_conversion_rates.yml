@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: fct__kpi_conversion_rates 
+    description: Fact table from int_postgres__kpi_all_conversion_rates where the data is finalized for marketing users to analyze daily conversion rates of users & products.

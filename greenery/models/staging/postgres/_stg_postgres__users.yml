@@ -5,6 +5,15 @@ models:
     description: base table from postgres representing users
     columns:
       - name: user_guid
-        test:
+        tests:
           - unique
           - not_null
+      - name: users_full_name
+        tests:
+          - not_empty_string
+      - name: users_email
+        tests:
+          - not_empty_string
+      - name: users_phone_number
+        tests:
+          - not_empty_string

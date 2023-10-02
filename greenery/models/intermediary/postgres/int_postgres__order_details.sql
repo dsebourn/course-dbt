@@ -3,8 +3,8 @@ staging_orders as (
     select * from {{ref('stg_postgres__orders')}}
 ),
 
-staging_order_numbers as (
-    select * from {{ref('stg_postgres__order_number_log')}}
+int_order_numbers as (
+    select * from {{ref('int_postgres__order_number_log')}}
 ),
 
 int_order_item_details as (
@@ -77,7 +77,7 @@ int_transforms as (
             else null
         end as days_in_preparing_status
     from staging_orders as orders
-    left join staging_order_numbers as order_number
+    left join int_order_numbers as order_number
         on orders.order_guid = order_number.order_guid
     left join int_order_item_details as items
         on orders.order_guid = items.order_guid

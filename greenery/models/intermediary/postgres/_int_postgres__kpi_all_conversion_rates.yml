@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_postgres__kpi_all_conversion_rates
+    description: Intermediate table from int_postgres__kpi tables where we calculate the daily conversion rate of users, as well as the conversion rate of specific products.

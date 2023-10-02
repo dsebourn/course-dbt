@@ -1,3 +1,7 @@
+{{ config(
+    post_hook="{{ grant_select_on_model_to_roles(['TRANSFORMER_DEV', 'RESEARCH_ROLE', 'MARKETING_ROLE', 'OPERATIONS_ROLE', 'SALES_ROLE', 'PRODUCT_ROLE']) }}"
+) }}
+
 with
 
 int_products as (

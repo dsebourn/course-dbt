@@ -5,6 +5,6 @@ models:
     description: base table from postgres representing all addresses and their geographical data
     columns: 
       - name: address_guid
-        test:
+        tests:
           - unique
           - not_null

@@ -1,6 +1,10 @@
 with
 web_events as (
-    select * from {{ref('stg_postgres__events')}}
+    select *,
+        min(created_at_utc) over
+            (partition by session_guid)
+            as session_start_at_utc
+    from {{ref('stg_postgres__events')}}
 ),
 
 order_items as (
@@ -115,6 +119,7 @@ prep_final_web_orders_shipped as (
 prep_final as (
     select
         distinct events.session_guid,
+        events.session_start_at_utc::date as session_start_date,
         pfwv.array_of_products_viewed,
         pfwca.array_of_products_added_to_cart,
         pfwo.array_of_products_ordered,

@@ -5,6 +5,6 @@ models:
     description: base table from postgres representing all distinct products, as well as prices and inventory quantity
     columns:
       - name: product_guid
-        test:
+        tests:
           - unique
           - not_null
