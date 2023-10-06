@@ -1,0 +1,14 @@
+version: 2
+
+exposures:  
+  - name: quarterly_product_funnel_report
+    description: >
+      Models that are critical to the Quarterly Product Funnel Report
+    type: dashboard
+    url: https://app.sigmacomputing.com/corise-dbt/workbook/Quarterly-Product-Funnel-Report-2uRywcw4uQZpH1yGd6KbkG?:explore=04a38e73-ea3f-4001-a021-2299c31e9ebb
+    maturity: high
+    owner:
+      name: Dakota Sebourn
+    depends_on:
+      - ref('dim__quarterly_product_funnel')
+    label: "Quarterly Product Funnel Report"

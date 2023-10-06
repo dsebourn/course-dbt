@@ -10,6 +10,7 @@ int_users as (
 
 prep_final as (
     select
+        user_guid,
         users_first_name, 
         users_last_name, 
         users_full_name, 

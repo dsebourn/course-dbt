@@ -1,0 +1,5 @@
+version 2:
+
+models:
+  - name: dim__webpage_missed_opportunities
+    description: Dimensions table containing the a list of products that were viewed but not purchased by customers.

@@ -9,6 +9,7 @@ order_details as (
 
 final as (
     select
+        order_guid,
         days_in_preparing_status,
         order_number,
         users_full_name, 

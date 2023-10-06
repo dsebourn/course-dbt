@@ -1,0 +1,1 @@
+No ReadMe was required for project 2. Additional models were developed, tests were implemented.

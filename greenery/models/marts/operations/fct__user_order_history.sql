@@ -9,7 +9,9 @@ order_history as (
 
 final as (
     select
-        order_number, 
+        order_guid,
+        order_number,
+        user_guid,
         users_full_name, 
         order_placed_at_utc, 
         list_of_products_ordered, 

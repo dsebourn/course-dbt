@@ -1,0 +1,5 @@
+version 2:
+
+models:
+  - name: dim__quarterly_product_funnel
+    description: Dimensions table containing the product funnel analysis results, aggregated quarterly for leadership analysis.

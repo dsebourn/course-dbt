@@ -14,6 +14,7 @@ users as (
 prep_final as (
     select
         results.session_guid,
+        users.user_guid,
         users.users_full_name,
         users.user_account_created_at_utc,
         users.count_of_user_lifetime_orders,

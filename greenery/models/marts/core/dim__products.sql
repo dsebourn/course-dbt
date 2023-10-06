@@ -10,6 +10,7 @@ int_products as (
 
 prep_final as (
     select
+        product_guid
         product_name,
         product_price,
         current_product_inventory
